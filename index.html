@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mind Reader</title>
 
-    <!-- add bootstrap styles and JS here -->
+    <!--Link bootstrap to HTML-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
@@ -18,27 +18,30 @@
 </head>
 
 <body>
+    <!--Top Container holding text areas and button-->
     <div class="container">
         <div class="row">
             <div class="col-md-4 offset-md-4 col-sm-12">
                 <div class="card w-100">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item" id="1">An item</li>
-                        <button type="button" class="btn btn-primary btn-lg" id="2">Large button</button>
-                        <li class="list-group-item" id="3">A second item</li>
-                        <li class="list-group-item" id="4">A third item</li>
-                        <li class="list-group-item" id="5">A fourth item</li>
+                        <li class="list-group-item" id="headingText">An item</li>
+                        <li>
+                            <button type="button" class="btn btn-primary btn-lg" id="nextReveal"
+                                onclick="next()">NEXT</button>
+                        </li>
+                        <li class="list-group-item" id="thirdArea">A second item</li>
                     </ul>
                 </div>
             </div>
         </div>
+        <!--Bottom card holding the go and back button-->
         <div class="row">
             <div class="col-md-4 offset-md-4 col-sm-12">
                 <div class="card w-100">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Button</a>
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary" id="startOver" onclick="reset()"></a>
                     </div>
                 </div>
             </div>
@@ -66,3 +69,5 @@
 
     <script src="./main.js"></script>
 </body>
+
+</html>
